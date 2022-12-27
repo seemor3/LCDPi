@@ -2,7 +2,11 @@ from PCF8574 import PCF8574_GPIO
 from Adafruit_LCD1602 import Adafruit_CharLCD
 
 def HelloWorld():
+    mcp.output(3,1)     # turn on LCD backlight
+    lcd.begin(16,2)     # set number of LCD lines and columns
+    lcd.setCursor(0,0)  # set cursor position
     lcd.message("Hello World!")
+    
 def destroy():
     lcd.clear()
 
