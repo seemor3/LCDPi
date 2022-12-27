@@ -23,6 +23,6 @@ lcd = Adafruit_CharLCD(pin_rs=0, pin_e=2, pins_db=[4,5,6,7], GPIO=mcp)
 if __name__ == '__main__':
     print ('Program is starting ... ')
     try:
-        loop()
+        HelloWorld()
     except KeyboardInterrupt:
         destroy()
